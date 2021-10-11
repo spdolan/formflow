@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/formflow/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/formflow/static/js/main.4083fa35.chunk.js",
+    "main.js.map": "/formflow/static/js/main.4083fa35.chunk.js.map",
+    "runtime-main.js": "/formflow/static/js/runtime-main.1cdab9f8.js",
+    "runtime-main.js.map": "/formflow/static/js/runtime-main.1cdab9f8.js.map",
+    "static/js/2.bc3a7031.chunk.js": "/formflow/static/js/2.bc3a7031.chunk.js",
+    "static/js/2.bc3a7031.chunk.js.map": "/formflow/static/js/2.bc3a7031.chunk.js.map",
+    "static/js/3.4d1b9e1d.chunk.js": "/formflow/static/js/3.4d1b9e1d.chunk.js",
+    "static/js/3.4d1b9e1d.chunk.js.map": "/formflow/static/js/3.4d1b9e1d.chunk.js.map",
+    "index.html": "/formflow/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/formflow/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.bc3a7031.chunk.js.LICENSE.txt": "/formflow/static/js/2.bc3a7031.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/formflow/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1cdab9f8.js",
+    "static/js/2.bc3a7031.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.4083fa35.chunk.js"
+  ]
+}
