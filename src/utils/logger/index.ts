@@ -10,7 +10,7 @@ const logger = createLogger({
     format.splat(),
     format.json(),
   ),
-  defaultMeta: { service: 'your-service-name' },
+  // defaultMeta: { service: 'your-service-name' },
   transports: [
     /*
      - Write to all logs with level `info` and below to `app-combined.log`.

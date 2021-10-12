@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+# Formflow example
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple form flow example.
+
+- React using TypeScript.
+- Winston for logging.
+- ESLint for code style guide/enforcement.
+- React-hook-forms for form state management.
+- Jest for unit testing.
 
 ## Available Scripts
 
@@ -13,6 +19,14 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
+
+### `yarn predeploy`
+
+Executes our `build` script to generate required code.
+
+### `yarn deploy`
+
+Leverages the `gh-pages` library to deploy the application to the target [package.json](./package.json) homepage value.
 
 ### `yarn test`
 

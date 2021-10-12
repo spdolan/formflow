@@ -4,27 +4,41 @@
   "private": true,
   "homepage": "http://spdolan.github.io/formflow",
   "dependencies": {
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "@hookform/error-message": "^2.0.0",
+    "@material-ui/lab": "^4.0.0-alpha.60",
+    "@mui/icons-material": "^5.0.3",
+    "@mui/lab": "^5.0.0-alpha.50",
+    "@mui/material": "^5.0.3",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "@types/jest": "^26.0.15",
-    "@types/node": "^12.0.0",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.10.3",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "@xstate/react": "^1.6.1",
+    "date-fns": "^2.25.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-hook-form": "^7.17.2",
     "react-scripts": "4.0.3",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1",
-    "winston": "^3.3.3"
+    "winston": "^3.3.3",
+    "xstate": "^4.25.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:ci": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
+    "lint:fix": "eslint --fix \"src/**/*.{ts,tsx}\""
   },
   "eslintConfig": {
     "extends": [
@@ -43,5 +57,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "gh-pages": "^3.2.3"
   }
 }
