@@ -1,9 +1,15 @@
 {
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "cypress/globals": true
   },
-  "extends": ["plugin:react/recommended", "airbnb"],
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "plugin:cypress/recommended",
+    "plugin:chai-friendly/recommended"
+  ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
@@ -12,7 +18,7 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint", "react-hooks"],
+  "plugins": ["react", "@typescript-eslint", "react-hooks", "cypress"],
   "rules": {
     // note you must disable the base rule as it can report incorrect errors
     "no-use-before-define": "off",
@@ -41,7 +47,15 @@
         "ts": "never",
         "tsx": "never"
       }
-    ]
+    ],
+    "import/no-extraneous-dependencies": "warn",
+    "no-undef": "warn",
+    "cypress/no-assigning-return-values": "error",
+    "cypress/no-unnecessary-waiting": "error",
+    "cypress/assertion-before-screenshot": "warn",
+    "cypress/no-force": "warn",
+    "cypress/no-async-tests": "error",
+    "cypress/no-pause": "error"
   },
   "overrides": [
     {

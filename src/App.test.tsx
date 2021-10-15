@@ -1,9 +1,8 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { mount } from '@cypress/react';
 import App from './App';
 
-test('renders enter user info heading', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/enter user info/i);
-  expect(linkElement).toBeInTheDocument();
+it('renders Enter User Info', () => {
+  mount(<App />);
+  cy.get('body').contains('Enter User Info');
 });
