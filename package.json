@@ -1,7 +1,7 @@
 {
   "name": "formflow",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "http://spdolan.github.io/formflow",
   "dependencies": {
     "@emotion/react": "^11.4.1",
@@ -28,6 +28,9 @@
     "web-vitals": "^1.0.1",
     "winston": "^3.3.3",
     "xstate": "^4.25.0"
+  },
+  "jest": {
+    "testMatch": [ "**/__tests__/**/*.[jt]s", "**/?(*.)+(spec|test).[jt]s" ]
   },
   "scripts": {
     "start": "react-scripts start",
